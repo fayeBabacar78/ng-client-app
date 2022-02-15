@@ -6,6 +6,9 @@
     "ng-client-app": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "css"
+        },
         "@schematics/angular:application": {
           "strict": true
         }
