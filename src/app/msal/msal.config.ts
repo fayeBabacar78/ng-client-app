@@ -32,8 +32,8 @@ export const MSALGuardConf: MsalGuardConfiguration = {
 export const MSALInterceptorConf: MsalInterceptorConfiguration = {
   interactionType: InteractionType.Popup,
   protectedResourceMap: new Map([ // protected resources that need access token
-    [e.msGraphAPI, MS_GRAPH_SCOPES], // to read user data from ms grasp
-    [e.webAPI, API_SCOPES], // our api is a protected resource with th
+    [e.msGraphAPI, MS_GRAPH_SCOPES], // to read user data from ms graph
+    [e.webAPI, API_SCOPES], // our api is a protected resource with as well
   ])
 }
 
