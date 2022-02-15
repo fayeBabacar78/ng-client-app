@@ -25,15 +25,15 @@ export const MSALInstance: IPublicClientApplication = new PublicClientApplicatio
 export const MSALGuardConf: MsalGuardConfiguration = {
   interactionType: InteractionType.Popup,
   authRequest: {
-    scopes: APPLICATION_SCOPES
+    scopes: APPLICATION_SCOPES // user has to consent these permissions (scopes)
   }
 };
 
 export const MSALInterceptorConf: MsalInterceptorConfiguration = {
   interactionType: InteractionType.Popup,
   protectedResourceMap: new Map([ // protected resources that need access token
-    [e.msGraphAPI, MS_GRAPH_SCOPES],
-    [e.webAPI, API_SCOPES],
+    [e.msGraphAPI, MS_GRAPH_SCOPES], // to read user data from ms grasp
+    [e.webAPI, API_SCOPES], // our api is a protected resource with th
   ])
 }
 

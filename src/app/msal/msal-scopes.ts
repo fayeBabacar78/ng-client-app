@@ -6,4 +6,4 @@ export const APPLICATION_SCOPES = [
     MS_GRAPH_SCOPES,
   ...
     API_SCOPES
-];
+]; // concatenation using spread operator (...)

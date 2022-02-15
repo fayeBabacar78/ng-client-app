@@ -8,6 +8,7 @@ export  class DataService {
   constructor(private http: HttpClient) {
   }
 
+  // fetch data from api
   getWeatherForecastData() {
     return this.http.get<any[]>(e.webAPI + 'forecast');
   }
