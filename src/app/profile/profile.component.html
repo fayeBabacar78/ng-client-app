@@ -1,5 +1,6 @@
-<main>
-  <p>
-    {{ (data$ | async) | json }}
-  </p>
-</main>
+<section style="width: 80%; margin: 32px auto;">
+  <div style="margin-top: 50px; font-size: 16px">
+    <h1>Weather Forecast Data</h1>
+    <pre>{{ (data$ | async) | json }}</pre>
+  </div>
+</section>
